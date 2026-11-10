@@ -1,0 +1,978 @@
+Bro! 🔥 Your idea is to create SAIPRTAP — a complete website hosting, building, and deployment platform similar to Netlify, but with your own brand, dashboard, hosting infrastructure, and website URLs.
+
+Your main requirement is:
+
+[玺芮实业 | 人工智能应用的先驱者](https://images.openai.com/static-rsc-4/m9jDfrA2xMwUI5DznPgVcLAWvN2g1vgadS8joD_xiO0UZtgKhspzh08SoFPN54ilKYuwRkrdim87QL4iGjMv9XmcROkgTU22UtQCE49ix-F-ddLPnG2iPvVYg6B5s7ErBjaYbJEKWhC9PUzJbhXrqec-tU0mQgWSfQm2QKK5SJU?purpose=inline)
+
+# SAIPRTAP
+
+Build • Deploy • Host • Innovate
+
+Free public website publishing
+
+# your-site.sai.app
+
+Proposed public website URL format
+
+Every published project should use `sai.app` instead of `netlify.app`.
+
+I've used your uploaded developer logo as the visual identity reference. The design direction is royal gold, metallic silver, electric blue, and dark navy.
+
+One important technical point: SAIPRTAP must own or control the `sai.app` domain and operate its own hosting and deployment infrastructure. It cannot simply rename Netlify's URLs. The PRD below specifies an independent platform.
+
+# Complete implementation-ready PRD
+
+# SAIPRTAP
+
+## Complete Product Requirements Document (PRD)
+
+### AI Website Builder, Hosting, Deployment & Developer Platform
+
+**Product:** SAIPRTAP\
+**Primary domain:** `sai.app` (subject to domain acquisition)\
+**Platform type:** Public SaaS-style web hosting and developer platform\
+**Primary objective:** Make website creation, hosting, deployment and publication accessible to everyone without a mandatory subscription.\
+**Reference product:** Netlify\
+**Brand identity:** User-provided SAIPRATAP developer logo\
+**Primary URL format:** `https://project-name.sai.app`
+
+---
+
+# 1. Product Vision
+
+SAIPRTAP is an independent website development and hosting platform that allows users to:
+
+- Create websites using AI.
+- Upload existing website projects.
+- Connect GitHub repositories.
+- Deploy HTML, CSS, JavaScript, React, Vue and other supported frameworks.
+- Host public websites.
+- Automatically publish website updates.
+- Manage domains and SSL certificates.
+- Preview websites before publication.
+- Monitor website traffic and performance.
+- Manage deployment history and restore previous versions.
+- Download website source code.
+
+The platform must provide an experience comparable to modern developer hosting platforms while maintaining its own infrastructure and identity.
+
+**Core principle:** Create once, deploy easily, publish publicly.
+
+# 2. Main Product Goals
+
+1. Replace the default `netlify.app` branding with `sai.app` for SAIPRTAP-hosted websites.
+2. Provide free public website publishing.
+3. Support multiple projects per user.
+4. Make deployment possible without requiring coding knowledge.
+5. Provide professional developer tools for experienced users.
+6. Make the dashboard responsive on mobile, tablet and desktop.
+7. Make the platform installable as a PWA.
+8. Provide reliable security, deployment monitoring and backups.
+9. Provide transparent resource and fair-use policies.
+10. Never require a paid subscription to access the basic publishing workflow.
+
+# 3. URL and Domain System
+
+All platform-generated website addresses must use the SAIPRTAP domain.
+
+| Purpose            | URL format                                 |
+| ------------------ | ------------------------------------------ |
+| Main website       | `https://sai.app`                          |
+| Dashboard          | `https://app.sai.app`                      |
+| Documentation      | `https://docs.sai.app`                     |
+| User website       | `https://project-name.sai.app`             |
+| Preview deployment | `https://preview-id--project-name.sai.app` |
+| API                | `https://api.sai.app`                      |
+| Status             | `https://status.sai.app`                   |
+
+### URL requirements
+
+- Automatically generate a unique project slug.
+- Check slug availability before publication.
+- Allow users to change project names.
+- Prevent reserved and abusive names.
+- Support wildcard DNS routing.
+- Automatically provision HTTPS certificates.
+- Redirect HTTP to HTTPS.
+- Support user-owned custom domains.
+- Provide domain verification and DNS instructions.
+- Support deployment-specific preview URLs.
+
+All URLs must be validated before being displayed as successfully published.
+
+# 4. Complete User Interface
+
+## 4.1 Landing Page
+
+Create a professional, modern landing page.
+
+### Header
+
+- SAIPRTAP logo.
+- Product.
+- AI Builder.
+- Hosting.
+- Documentation.
+- Pricing.
+- Login.
+- Sign Up.
+- Start Building.
+
+### Hero section
+
+Headline:
+
+**Your Website. Your Code. Your World.**
+
+Description:
+
+Build, deploy and publish websites with SAIPRTAP. Use AI, upload your project or connect GitHub and publish your website on your own SAIPRTAP address.
+
+Buttons:
+
+- Start Building.
+- Deploy Your Website.
+- Explore Features.
+- View Documentation.
+
+### Additional sections
+
+1. AI-powered website creation.
+2. One-click deployment.
+3. Free public hosting.
+4. GitHub integration.
+5. Automatic HTTPS.
+6. Deployment previews.
+7. Website analytics.
+8. Developer tools.
+9. Custom domains.
+10. PWA support.
+11. Security and reliability.
+12. Frequently asked questions.
+
+## 4.2 User Authentication
+
+Support:
+
+- Email registration.
+- Email/password login.
+- Google authentication.
+- Email verification.
+- Password reset.
+- Logout.
+- Session management.
+- Account deletion.
+- User profile settings.
+
+Guest users may experiment with a limited preview. An authenticated account is required to save projects and publish them permanently.
+
+## 4.3 Main Dashboard
+
+After login, show a complete developer dashboard.
+
+Dashboard cards:
+
+- Total Projects.
+- Published Websites.
+- Total Deployments.
+- Website Visitors.
+- Successful Builds.
+- Failed Builds.
+- Storage Usage.
+- Bandwidth Usage.
+
+Sidebar:
+
+1. Overview.
+2. My Projects.
+3. Create Website.
+4. AI Website Builder.
+5. Deployments.
+6. GitHub.
+7. Domains.
+8. Analytics.
+9. Functions.
+10. Forms.
+11. Storage.
+12. Environment Variables.
+13. Team Management.
+14. Documentation.
+15. Settings.
+16. Help and Support.
+
+Every sidebar item must open its actual working page.
+
+# 5. Website Creation System
+
+Provide four different creation methods.
+
+### Method A: Upload Website
+
+Users can upload:
+
+- ZIP files.
+- HTML files.
+- CSS files.
+- JavaScript files.
+- Images.
+- Fonts.
+- Compiled website build folders.
+
+Workflow:
+
+1. Click Upload Website.
+2. Select project ZIP or build folder.
+3. Validate file structure.
+4. Detect the framework.
+5. Configure build settings when required.
+6. Start deployment.
+7. Display build logs.
+8. Generate a preview.
+9. Publish the website.
+
+### Method B: GitHub Deployment
+
+Integrate GitHub OAuth and GitHub App permissions.
+
+Functions:
+
+- Connect GitHub.
+- Select repository.
+- Select branch.
+- Import project.
+- Configure build command.
+- Configure publish directory.
+- Configure environment variables.
+- Enable automatic deployment.
+- Disconnect repository.
+
+Every new commit to the selected production branch should trigger a build and deployment.
+
+### Method C: AI Website Builder
+
+Users describe their website requirements.
+
+Example:
+
+"Create a professional education website with student registration, courses, quizzes and an admin dashboard."
+
+AI workflow:
+
+1. Understand the prompt.
+2. Generate project structure.
+3. Generate frontend source code.
+4. Generate backend code when requested.
+5. Generate responsive design.
+6. Run static and build checks.
+7. Show preview.
+8. Allow users to request modifications.
+9. Publish after user approval.
+
+AI must not claim that an application works without testing its actual functions.
+
+### Method D: Start from Template
+
+Provide templates for:
+
+- Portfolio.
+- Business website.
+- Education website.
+- E-commerce frontend.
+- Blog.
+- Landing page.
+- Dashboard.
+- Documentation.
+- Restaurant.
+- Agency.
+- Personal website.
+- React application.
+
+Users can preview, customize and deploy templates.
+
+# 6. Professional Deployment Engine
+
+This is the most important part of SAIPRTAP.
+
+### Deployment workflow
+
+`Upload / GitHub / AI → Validation → Build → Testing → Preview → Publish → CDN`
+
+### Required features
+
+- Automatic builds.
+- Build logs.
+- Deployment progress.
+- Build cancellation.
+- Build failure messages.
+- Preview deployments.
+- Production deployments.
+- Branch deployments.
+- Deployment history.
+- One-click rollback.
+- Cache invalidation.
+- Atomic deployment activation.
+- Build artifact storage.
+- Deployment notifications.
+
+### Deployment statuses
+
+- Queued.
+- Installing.
+- Building.
+- Testing.
+- Preview Ready.
+- Publishing.
+- Published.
+- Failed.
+- Cancelled.
+
+### Important reliability rule
+
+Never show a deployment as Published until the deployment is available through its actual public URL and its health check succeeds.
+
+# 7. SAIPRTAP AI Developer
+
+Create an integrated AI coding assistant.
+
+Features:
+
+- Generate websites from prompts.
+- Edit existing website code.
+- Generate components.
+- Fix build errors.
+- Explain code.
+- Generate HTML/CSS/JS.
+- Generate React components.
+- Improve mobile responsiveness.
+- Find broken links.
+- Improve SEO.
+- Suggest accessibility improvements.
+- Generate documentation.
+- Create website content.
+
+Provide a code editor with:
+
+- File explorer.
+- Syntax highlighting.
+- Search.
+- Replace.
+- Terminal/build output.
+- Preview panel.
+- Save.
+- Undo/redo.
+- Download source code.
+
+The AI must use a controlled tool system and cannot access secrets or unrestricted server resources.
+
+# 8. Hosting Infrastructure
+
+SAIPRTAP must operate its own hosting system.
+
+### Recommended infrastructure
+
+**Frontend**
+
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+- PWA.
+
+**Backend**
+
+- Node.js.
+- TypeScript.
+- NestJS or Fastify.
+- REST APIs.
+- WebSocket deployment updates.
+
+**Database**
+
+- PostgreSQL.
+- Redis for queues and caching.
+
+**Storage**
+
+- Cloudflare R2 or equivalent S3-compatible object storage.
+
+**Hosting and delivery**
+
+- Cloudflare Workers for edge routing.
+- Cloudflare CDN.
+- Object storage for deployment artifacts.
+- Isolated build workers.
+- Wildcard DNS for `*.sai.app`.
+
+**Authentication**
+
+- Supabase Auth or an equivalent secure authentication service.
+
+**Monitoring**
+
+- Sentry.
+- Server logs.
+- Uptime monitoring.
+- Deployment health checks.
+
+### Infrastructure architecture
+
+1. User submits a project.
+2. API validates permissions and project data.
+3. Deployment queue receives the task.
+4. An isolated build worker processes the project.
+5. Build output is scanned and validated.
+6. Static assets are stored in object storage.
+7. Deployment metadata is recorded in PostgreSQL.
+8. Edge routing maps the project subdomain to the published deployment.
+9. HTTPS and cache policies are applied.
+10. The public website becomes accessible.
+
+Do not execute untrusted project code inside the main application server.
+
+# 9. Developer Hosting Features
+
+Provide these modules:
+
+| Module                | Required capability                   |
+| --------------------- | ------------------------------------- |
+| Static Hosting        | Publish static websites               |
+| CDN                   | Distribute website assets             |
+| HTTPS                 | Automatic SSL certificates            |
+| Custom Domains        | Connect external domains              |
+| DNS                   | Domain verification and guidance      |
+| Redirects             | Configure URL redirects               |
+| Headers               | Configure security and caching        |
+| Functions             | Serverless API endpoints              |
+| Scheduled Jobs        | Run scheduled tasks                   |
+| Forms                 | Collect website form submissions      |
+| Storage               | Upload and serve files                |
+| Environment Variables | Store deployment configuration        |
+| Build Plugins         | Extend build processes                |
+| Git Integration       | Automatic deployment                  |
+| Preview System        | Preview changes before publishing     |
+| Rollbacks             | Restore previous deployments          |
+| Analytics             | Track website performance             |
+| Logs                  | Inspect deployment and runtime errors |
+
+Backend functions, databases and scheduled execution must be added through isolated services with their own quotas and security controls.
+
+# 10. Website Forms
+
+Allow website owners to create and manage forms.
+
+Examples:
+
+- Contact form.
+- Feedback form.
+- Registration form.
+- Enquiry form.
+- Newsletter form.
+
+Functions:
+
+- Form submission API.
+- Spam protection.
+- CAPTCHA integration.
+- Email notifications.
+- Submission dashboard.
+- CSV export.
+- Data retention controls.
+
+# 11. Analytics Dashboard
+
+Show:
+
+- Total visitors.
+- Page views.
+- Unique visitors.
+- Top pages.
+- Referrers.
+- Country-level traffic where legally appropriate.
+- Device categories.
+- Browser categories.
+- Daily and monthly trends.
+- Bandwidth consumption.
+
+Use privacy-conscious analytics and avoid collecting unnecessary personal information.
+
+# 12. Custom Domain Management
+
+Users may connect domains they own.
+
+Workflow:
+
+1. Add domain.
+2. Verify ownership.
+3. Display required DNS records.
+4. Verify DNS configuration.
+5. Provision SSL certificate.
+6. Activate domain.
+7. Verify HTTPS.
+8. Set primary domain.
+9. Configure redirects.
+
+Never claim a domain is connected until DNS and HTTPS checks pass.
+
+# 13. Free Publishing Policy
+
+SAIPRTAP's core public publishing must remain free without a mandatory subscription.
+
+### Free core features
+
+- Website creation.
+- Multiple projects.
+- Static website deployment.
+- Public `sai.app` addresses.
+- HTTPS.
+- Preview deployments.
+- Deployment history.
+- Source-code download.
+- Basic analytics.
+- GitHub integration.
+- Basic AI website creation, subject to available AI usage.
+
+### Fair-use system
+
+Do not advertise literally unlimited bandwidth, AI generation, storage, compute or builds.
+
+Instead:
+
+- Allow unlimited project creation as a product objective.
+- Apply transparent resource allowances.
+- Protect infrastructure from abuse.
+- Publish quotas before users deploy.
+- Show resource usage in the dashboard.
+- Never introduce hidden charges.
+- Pause or restrict abusive usage with clear explanations.
+- Provide a free static publishing path.
+
+**No mandatory subscription for core public website publishing.**
+
+# 14. User Settings
+
+Provide:
+
+- Profile editing.
+- Password management.
+- Connected accounts.
+- Notification preferences.
+- Project privacy settings.
+- Account security.
+- Active sessions.
+- Data export.
+- Account deletion.
+
+# 15. Admin Dashboard
+
+Only authorized administrators can access the admin dashboard.
+
+Features:
+
+- Total users.
+- Active users.
+- Total projects.
+- Published sites.
+- Deployment queue.
+- Build failures.
+- Storage consumption.
+- Bandwidth consumption.
+- Infrastructure health.
+- Abuse reports.
+- Suspended projects.
+- User management.
+- Domain management.
+- AI usage management.
+- Audit logs.
+- System announcements.
+- Feature flags.
+
+Admin actions must be recorded in immutable audit logs.
+
+# 16. Security Requirements
+
+Implement:
+
+- HTTPS everywhere.
+- Secure authentication.
+- Role-based access control.
+- Rate limiting.
+- API authorization.
+- Input validation.
+- Malware and secret scanning.
+- ZIP extraction protection against path traversal and ZIP bombs.
+- Build sandboxing.
+- Environment-variable encryption.
+- Secure webhook verification.
+- CSRF protection where applicable.
+- Content Security Policy.
+- XSS protection.
+- SQL injection prevention.
+- DDoS protection.
+- Backup and recovery.
+- Privacy policy.
+- Terms of service.
+- Abuse reporting.
+
+# 17. PWA and Device Installation
+
+The SAIPRTAP dashboard must work as an installable Progressive Web App.
+
+Requirements:
+
+- Web app manifest.
+- Service worker.
+- Install button.
+- Offline dashboard shell.
+- Responsive mobile navigation.
+- App icons.
+- Splash screen.
+- Update notifications.
+
+Users must be able to install the SAIPRTAP dashboard on compatible Android, desktop and other supported devices.
+
+This does not automatically make every hosted customer website an installable native application.
+
+# 18. Working Buttons and Interactions
+
+Every visible button must have a real implemented action.
+
+| Button         | Expected result                          |
+| -------------- | ---------------------------------------- |
+| Sign Up        | Open registration                        |
+| Login          | Authenticate user                        |
+| Start Building | Open project creation                    |
+| Upload Website | Open file picker                         |
+| Import GitHub  | Connect GitHub                           |
+| Create Project | Create database project record           |
+| Build          | Start deployment job                     |
+| Cancel Build   | Cancel queued/running job safely         |
+| Preview        | Open preview deployment                  |
+| Publish        | Activate production deployment           |
+| Rollback       | Restore selected deployment              |
+| Edit Website   | Open code editor                         |
+| AI Fix         | Run code diagnostics and repair workflow |
+| Add Domain     | Open domain configuration                |
+| Verify Domain  | Run DNS checks                           |
+| Analytics      | Open project analytics                   |
+| Download       | Download project source ZIP              |
+| Delete Project | Confirm and delete project               |
+| Logout         | End authenticated session                |
+
+No fake buttons, placeholder links, empty pages or simulated deployment-success messages.
+
+# 19. Notifications
+
+Provide notifications for:
+
+- Build started.
+- Build successful.
+- Build failed.
+- Deployment published.
+- Domain verified.
+- SSL certificate ready.
+- Domain verification failure.
+- High resource usage.
+- Security warnings.
+- Project suspension.
+
+Channels:
+
+- In-dashboard notifications.
+- Browser push notifications.
+- Email notifications.
+- Webhooks.
+
+Users control notification preferences.
+
+# 20. Database Structure
+
+Create the following core database entities:
+
+- users
+- user_profiles
+- organizations
+- organization_members
+- projects
+- project_settings
+- repositories
+- deployments
+- build_jobs
+- build_logs
+- deployment_artifacts
+- domains
+- domain_verifications
+- ssl_certificates
+- environment_variables
+- forms
+- form_submissions
+- analytics_events
+- usage_records
+- notifications
+- serverless_functions
+- storage_objects
+- audit_logs
+- abuse_reports
+- api_keys
+
+Every project, deployment, domain and secret must have correct ownership and authorization checks.
+
+# 21. Main API Endpoints
+
+Authentication:
+
+- POST `/api/auth/register`
+- POST `/api/auth/login`
+- POST `/api/auth/logout`
+
+Projects:
+
+- GET `/api/projects`
+- POST `/api/projects`
+- GET `/api/projects/:id`
+- PATCH `/api/projects/:id`
+- DELETE `/api/projects/:id`
+
+Deployments:
+
+- POST `/api/projects/:id/deployments`
+- GET `/api/projects/:id/deployments`
+- GET `/api/deployments/:id`
+- POST `/api/deployments/:id/cancel`
+- POST `/api/deployments/:id/rollback`
+
+Domains:
+
+- POST `/api/projects/:id/domains`
+- GET `/api/projects/:id/domains`
+- POST `/api/domains/:id/verify`
+- DELETE `/api/domains/:id`
+
+Analytics:
+
+- GET `/api/projects/:id/analytics`
+
+AI:
+
+- POST `/api/ai/generate`
+- POST `/api/ai/edit`
+- POST `/api/ai/fix`
+
+All endpoints require appropriate authentication, authorization, validation, rate limits and error handling.
+
+# 22. Testing and Quality Assurance
+
+Before launch, test:
+
+**Authentication**
+
+- Registration.
+- Login.
+- Logout.
+- Password reset.
+- Unauthorized access.
+
+**Projects**
+
+- Create.
+- Edit.
+- Delete.
+- Rename.
+- Multiple projects.
+
+**Deployment**
+
+- Upload ZIP.
+- Import GitHub repository.
+- Successful build.
+- Failed build.
+- Preview.
+- Publish.
+- Rollback.
+- Broken build recovery.
+
+**Domains**
+
+- Valid domain.
+- Invalid domain.
+- DNS propagation.
+- HTTPS certificate.
+- Certificate renewal.
+
+**Security**
+
+- Unauthorized API requests.
+- Malicious ZIP uploads.
+- Cross-user project access.
+- Secret exposure.
+- Rate limiting.
+- Malicious deployment attempts.
+
+**Compatibility**
+
+- Chrome.
+- Firefox.
+- Edge.
+- Safari.
+- Android.
+- Desktop.
+- Tablet.
+
+**Performance**
+
+- Large projects.
+- Concurrent deployments.
+- Traffic spikes.
+- CDN cache invalidation.
+- Recovery after service failures.
+
+# 23. Development Roadmap
+
+### Phase 1 — Core platform
+
+- Landing page.
+- Authentication.
+- User dashboard.
+- Project management.
+- ZIP upload.
+- Static build and hosting.
+- `sai.app` subdomain publishing.
+- HTTPS.
+- Deployment logs.
+
+### Phase 2 — Developer tools
+
+- GitHub integration.
+- Automatic deployments.
+- Preview deployments.
+- Deployment history.
+- Rollbacks.
+- Custom domains.
+- Analytics.
+
+### Phase 3 — AI builder
+
+- Prompt-based website generation.
+- Code editor.
+- AI code repair.
+- Templates.
+- Live preview.
+- Download source code.
+
+### Phase 4 — Full developer platform
+
+- Serverless functions.
+- Forms.
+- Storage.
+- Scheduled jobs.
+- Environment variables.
+- Team collaboration.
+- Build plugins.
+
+### Phase 5 — Production expansion
+
+- Global CDN optimization.
+- Advanced monitoring.
+- Security scanning.
+- Abuse detection.
+- Automated backups.
+- Disaster recovery.
+- Infrastructure scaling.
+
+# 24. Launch Acceptance Criteria
+
+SAIPRTAP is ready for its first public release only when:
+
+1. Users can register and log in.
+2. Users can create and manage projects.
+3. Users can upload a real website.
+4. The system can build supported projects.
+5. Deployment logs show real progress.
+6. A successful build creates a real public deployment.
+7. A project opens through its `sai.app` URL.
+8. HTTPS works.
+9. Users can update and redeploy websites.
+10. Rollbacks restore working previous versions.
+11. GitHub deployment works.
+12. Mobile dashboard navigation works.
+13. PWA installation works.
+14. Project ownership and security are enforced.
+15. Resource usage is measured.
+16. Errors are logged and displayed accurately.
+17. Core publishing works without a paid subscription.
+
+# 25. Final Product Definition
+
+SAIPRTAP is not merely a website builder. It is an independent website creation, deployment, hosting and developer infrastructure platform.
+
+**Brand:** SAIPRTAP\
+**Domain:** sai.app\
+**Main promise:** Build anything. Deploy anywhere. Publish with SAIPRTAP.
+
+**Brand slogan:**
+
+"Create • Innovate • Deploy • Empower"
+
+**Primary launch priority:** Make static website upload, build, HTTPS and `project-name.sai.app` publication reliable before attempting to launch every advanced Netlify-like feature at once.
+
+## 3. Your logo and branding
+
+[SwitchControl - Professional Gaming Optimization for Windows](https://images.openai.com/static-rsc-4/EdQa-qzWfl8MGBBQIIEUd-e25r4ideOIlbukf-ni6O-6OZSGn5VZzekTxPw_S_aeg-GR504UV1EGZh107Vmv_P2LKT0g9B8hYvuLicomCO6LwK_Cbg-WGpWSDRojmLMFwUo22ALEmA2D6qolykX-2LjgPAjxdRVEJfqMu30dV3I?purpose=inline)
+
+[switchcontrol.org](https://switchcontrol.org/?utm_source=chatgpt.com)
+
+Use your uploaded image as the official visual reference:
+
+- Main logo: metallic S with golden crown.
+- Brand colors: navy blue, electric blue, gold and silver.
+- Dashboard: dark developer interface.
+- Buttons: blue and gold accents.
+- Mobile app icon: simplified crowned S symbol.
+
+Brand consistency note: Your uploaded artwork spells SAIPRATAP, while your requested website name is SAIPRTAP. Use SAIPRTAP as the product name throughout the interface, and adapt the logo lettering to match it.
+
+## 4. Important technical references
+
+The PRD follows the major hosting concepts offered by Netlify: Git-based deployments, previews, serverless functions, forms, storage, CDN and domain management.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.netlify.com\&sz=32)
+
+Every building block your app needs+2
+
+
+
+The `.app` domain requires HTTPS for browser access.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.registry.google\&sz=32)
+
+Google Registry
+
+
+
+Netlify's current free plan also uses usage credits, which is a useful reminder that SAIPRTAP needs transparent infrastructure limits even when core publishing is free.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.netlify.com\&sz=32)
+
+Netlify+1
+
+
+
+## 5. My recommended first development milestone
+
+MVP priority
+
+Build these six things first:
+
+1. SAIPRTAP homepage and logo.
+2. Login and user dashboard.
+3. Upload ZIP website.
+4. Actual build and deployment engine.
+5. Real `project-name.sai.app` URLs with HTTPS.
+6. Deployment history and working rollback.
+
+These six features establish a real hosting platform. AI editing, serverless functions and advanced developer tools can follow.
+
+One final important point: This PRD is the implementation specification, not an already deployed hosting service. The `sai.app` domain, cloud infrastructure, DNS, certificates and deployment workers must actually be acquired, configured and tested before public hosting can work.
+
+I can also help prepare a weekly production health check after launch, covering website uptime, SSL, DNS, deployment and broken links.
+
+Weekly SAIPRTAP hosting health check

@@ -1,0 +1,6 @@
+{
+  "name": "SAIPRTAP - AI Website Builder & Cloud Hosting Platform",
+  "description": "Modern website hosting, building, and deployment platform powered by AI. Deploy static sites, React apps, and custom domains with free public publishing on *.sai.app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
